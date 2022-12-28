@@ -1,0 +1,137 @@
+{
+  "2cf357114388c74cc18cb976049b9be8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "217097ac5be2bf7d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671438803433,
+        "stop" : 1671438803433,
+        "duration" : 0
+      }
+    } ]
+  },
+  "0af9286fb84de77deb8a4a3e698aa777" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "98d9813a8e8e96b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671438803423,
+        "stop" : 1671438803423,
+        "duration" : 0
+      }
+    } ]
+  },
+  "aaee15be36678627642f70e99cf0d7d1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f782686b2cdee6aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671438803436,
+        "stop" : 1671438803436,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9b250f97a94e996c3ac482193b55f2ba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0b89e9c4e93cfaa",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 跳过测试用例",
+      "time" : {
+        "start" : 1671438803429,
+        "stop" : 1671438803429,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8c927cecefa070d465e2810420ef816a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e9bf7d1ef7585506",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671438803437,
+        "stop" : 1671438803437,
+        "duration" : 0
+      }
+    } ]
+  },
+  "bf7000dd78b21103563c8535041fe47a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ef916a714ddb1685",
+      "status" : "passed",
+      "time" : {
+        "start" : 1671438803434,
+        "stop" : 1671438803434,
+        "duration" : 0
+      }
+    } ]
+  },
+  "64ba71e76e868c626055642770c76b06" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "83019433dfa86d99",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 跳过测试用例不想执行",
+      "time" : {
+        "start" : 1671438803430,
+        "stop" : 1671438803430,
+        "duration" : 0
+      }
+    } ]
+  }
+}

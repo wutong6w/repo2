@@ -1,0 +1,63 @@
+
+二、使用@pytest.fixture来实现 部分 用例的前后置（注意是实现部分测试用例的前后置）
+为什么要使用@pytest.fixture来实现前后置，比如在上面的用例当中，我只想将“吴桐” 还有 “易车”这两个用例前执行一遍，而其他的用例不用执行前后置，而setup和teardown要执行就会在所有用例执行一遍，不会进行部分执行，所以
+这个时候我们要用@pytest.fixture来实现部分用例前后置。@pytest.fixture这个装饰器既可以实现所有用例前后置，也可以实现部分用例前后置
+
+@pytest.fixture(scope='',params='',autouse='',ids='',name='')
+（1）scope表示的是被@pytest.fixture标记的方法的作用域。可以作用于函数function（默认），也可作用于类class，也可作用于模块modular，还可以作用于包（package/session）
+（2）params：参数化（参数支持列表[]，元祖()，字典列表[{},{}]，字典元祖({},{})）
+（3）autouse=Ture：默认是自动执行，默认不是自动执行autouse=False
+（4）ids：当使用params参数化时，给每一个值设置一盒变量名，意义不大
+（5）name：给表示的是被@pytest.fixture标记的方法取一个别名,意义不大。当取了别名之后原来的名称就用不了了
+
+
+
+#scope参数笔记、autouse参数笔记 可以看test_lianxi02.py文件示例
+@pytest.fixture(scope='function',autouse=True,params=['成龙','周杰伦'])#使用@pytest.fixture装饰器作用于函数上，其中@pytest.fixture是固定写法，括号里scope='function'代表作用于函数,autouse=True代表默认所有用例自动使用前置后置，如果是autouse=Fales，那么就是不是自动用例都执行前后置
+#如果是scope='class'那么该方法就是作用在类上的，就实现每个类执行前执行一次。如果是scope='modular'就会在每个模块前面执行一次
+#如果是实现部分用例执行前后置那么就不要写autouse=True参数了，因为这个参数是让所有用例自动执行前后置的，省略了将每个用例传参函数了
+def my_fixture():#写一个函数方法
+    print('这是前置的方法，可以实现部分以及全部用例的前置')
+    yield #在里面加上yield，可以实现测试用例的后置方法
+    print('这是后置防范，可以实现部分测试用例的后置')
+
+class Testlogin02:
+    def test_01_login(self,my_fixture):#将my_fixture函数当做传参传给用例，就可以实现该用例的前置后置
+        print('测试吴桐')
+    def test_02_logao(self):
+        print('测试嘿嘿')
+    def test_03_login(self):
+        print('测试哈哈')
+
+
+#@pytest.fixture装饰器中的params参数笔记  可以看test_lianxi03.py文件示例
+@pytest.fixture(scope='function',autouse=True,params=['成龙','周杰伦'])#这里的params是参数名是有s的
+def my_fixture(request):#写一个函数方法
+    #通过 return 语句指定返回值后，我们在调用函数时，既可以将该函数赋值给一个变量，用变量保存函数的返回值，也可以将函数再作为某个函数的实际参数
+    return request.param#注意这个里面的是属性名param，不是params，如果写params会报错，这个是系统的固定写法，装饰器参数里面才是params
+    #return和yield都表示返回的意思，但是return后面不能有代码，yield返回后面可以接代码
+class Testlogin02:
+    def test_01_login(self,my_fixture):#将my_fixture函数当做传参传给用例，就可以实现该用例的前置后置
+        print('测试吴桐')
+        print('----------------',my_fixture)#此时已经使用params进行参数化了传几个参数该用例就执行几次，此时该用例就执行2次
+    def test_02_logao(self):
+        print('测试嘿嘿')
+    def test_03_login(self):
+        print('测试哈哈')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

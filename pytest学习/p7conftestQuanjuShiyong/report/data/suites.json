@@ -1,0 +1,107 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "p7conftestQuanjuShiyong.porduot",
+    "children" : [ {
+      "name" : "test_ceshi01",
+      "children" : [ {
+        "name" : "Testlogin",
+        "children" : [ {
+          "name" : "test_01_login",
+          "uid" : "8c8533e1c42640f3",
+          "parentUid" : "9cd1515017e16cd6d34a9f3b47d04e0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1671437979389,
+            "stop" : 1671437979390,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_02_logao",
+          "uid" : "46be2862f7fece90",
+          "parentUid" : "9cd1515017e16cd6d34a9f3b47d04e0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1671437979392,
+            "stop" : 1671437979392,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_03_login",
+          "uid" : "7abbdc8086aaec9b",
+          "parentUid" : "9cd1515017e16cd6d34a9f3b47d04e0d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1671437979394,
+            "stop" : 1671437979395,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9cd1515017e16cd6d34a9f3b47d04e0d"
+      } ],
+      "uid" : "d4e1e8eb29d10f5ee68fadcaa4562bd2"
+    } ],
+    "uid" : "a85c1c3b728101d3b51ade2cb5e48092"
+  }, {
+    "name" : "p7conftestQuanjuShiyong.user",
+    "children" : [ {
+      "name" : "test_ceshi",
+      "children" : [ {
+        "name" : "Testlogin",
+        "children" : [ {
+          "name" : "test_01_login",
+          "uid" : "290c4bbc6a6a229b",
+          "parentUid" : "c779e2da2fdae9400e3f93d11ad85121",
+          "status" : "passed",
+          "time" : {
+            "start" : 1671437979397,
+            "stop" : 1671437979397,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_02_logao",
+          "uid" : "f62351e21bf61f99",
+          "parentUid" : "c779e2da2fdae9400e3f93d11ad85121",
+          "status" : "passed",
+          "time" : {
+            "start" : 1671437979400,
+            "stop" : 1671437979400,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_03_login",
+          "uid" : "f0cc8545ae6fe61f",
+          "parentUid" : "c779e2da2fdae9400e3f93d11ad85121",
+          "status" : "passed",
+          "time" : {
+            "start" : 1671437979405,
+            "stop" : 1671437979406,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c779e2da2fdae9400e3f93d11ad85121"
+      } ],
+      "uid" : "2d6fc5319c9af04bb7086c3c3ee0fa6b"
+    } ],
+    "uid" : "b01fb3f614539d87bfd55dfd7733168b"
+  } ]
+}

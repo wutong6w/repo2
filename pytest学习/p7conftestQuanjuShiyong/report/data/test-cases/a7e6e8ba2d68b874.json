@@ -1,0 +1,114 @@
+{
+  "uid" : "a7e6e8ba2d68b874",
+  "name" : "test_01_login",
+  "fullName" : "p7conftestQuanjuShiyong.porduot.test_ceshi01.Testlogin#test_01_login",
+  "historyId" : "162c18db0f7de6e6c3df6133569e3f54",
+  "time" : {
+    "start" : 1671437860944,
+    "stop" : 1671437860944,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "all_fixture",
+    "time" : {
+      "start" : 1671437860943,
+      "stop" : 1671437860944,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture",
+    "time" : {
+      "start" : 1671437860944,
+      "stop" : 1671437860944,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "all_fixture::0",
+    "time" : {
+      "start" : 1671437860945,
+      "stop" : 1671437860945,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "my_fixture::0",
+    "time" : {
+      "start" : 1671437860945,
+      "stop" : 1671437860945,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "p7conftestQuanjuShiyong.porduot"
+  }, {
+    "name" : "suite",
+    "value" : "test_ceshi01"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testlogin"
+  }, {
+    "name" : "host",
+    "value" : "wutong6-43"
+  }, {
+    "name" : "thread",
+    "value" : "3300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "p7conftestQuanjuShiyong.porduot.test_ceshi01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a7e6e8ba2d68b874.json",
+  "parameterValues" : [ ]
+}

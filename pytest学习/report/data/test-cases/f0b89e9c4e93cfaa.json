@@ -1,0 +1,94 @@
+{
+  "uid" : "f0b89e9c4e93cfaa",
+  "name" : "test_03_login",
+  "fullName" : "p3pytestyonglizhixingshunxu.web.test_lianxi.Testlogin#test_03_login",
+  "historyId" : "9b250f97a94e996c3ac482193b55f2ba",
+  "time" : {
+    "start" : 1671438803429,
+    "stop" : 1671438803429,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 跳过测试用例",
+  "statusTrace" : "('D:\\\\pytest学习\\\\p3pytestyonglizhixingshunxu\\\\web\\\\test_lianxi.py', 23, 'Skipped: 跳过测试用例')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skipif(True, reason='跳过测试用例')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "p3pytestyonglizhixingshunxu.web"
+  }, {
+    "name" : "suite",
+    "value" : "test_lianxi"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testlogin"
+  }, {
+    "name" : "host",
+    "value" : "wutong6-43"
+  }, {
+    "name" : "thread",
+    "value" : "9704-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "p3pytestyonglizhixingshunxu.web.test_lianxi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6b8fef0b94fe2daf",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 跳过测试用例",
+      "time" : {
+        "start" : 1671438510011,
+        "stop" : 1671438510011,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ed65383ec6ba107e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 跳过测试用例",
+      "time" : {
+        "start" : 1671438173045,
+        "stop" : 1671438173045,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9ae3246b0ba9fd86",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 跳过测试用例",
+      "time" : {
+        "start" : 1671438119426,
+        "stop" : 1671438119426,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=2)", "smoke", "@pytest.mark.skipif(True, reason='跳过测试用例')" ]
+  },
+  "source" : "f0b89e9c4e93cfaa.json",
+  "parameterValues" : [ ]
+}

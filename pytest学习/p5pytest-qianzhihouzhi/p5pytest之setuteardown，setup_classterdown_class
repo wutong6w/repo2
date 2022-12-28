@@ -1,0 +1,120 @@
+pytest框架实现一些前后置（固件，夹具）的处理，常用三种
+一、setop/teardown,setup_class/teardown_class
+为什么需要这些功能？
+比如：web自动化执行用例之前，请问需要打开浏览器吗？用例执行之后需要关闭浏览器吗
+
+
+注意：pytest的前置后置全部都是小写，unittest前置后置的有大写
+
+下面请看本文件夹test_lianxi.py
+import time
+import pytest
+
+class Testlogin:
+
+    #这个方法在所有用例执行之前只执行一次
+    def setup_class(self):#类夹具，在每个测试类之前执行一次
+        print('在每个类执行之前的初始化的工作：比如：创建日志对象，创建数据库的连接，创建接口的请求对象。')
+
+    #这个方法是在每个用例执行之前执行一次
+    def setup(self):#该测试夹具在每个用例执行之前执行一遍
+        print('在执行测试用例之前执行的代码：打开浏览器，加载网页')
+
+    def test_01_login(self):
+        print('测试吴桐')
+
+    def test_02_logao(self):
+        print('测试嘿嘿')
+
+    def test_03_login(self):
+
+        print('测试哈哈')
+
+    def test_04_login(self):
+        print('测试易车')
+
+    def teardown(self):#在每个测试用例执行之后执行一遍
+        print('执行测试用例之后的扫尾工作：关闭浏览器')
+
+    def teardown_class(self):
+        print('在每个类执行后的扫尾工作：比如销毁日志对象，销毁数据库的连接，销毁接口的请求对象')
+
+
+二、使用@pytest.fixture来实现 部分 用例的前后置（注意是实现部分测试用例的前后置）
+为什么要使用@pytest.fixture来实现前后置，比如在上面的用例当中，我只想将“吴桐” 还有 “易车”这两个用例前执行一遍，而其他的用例不用执行前后置，而setup和teardown要执行就会在所有用例执行一遍，不会进行部分执行，所以
+这个时候我们要用@pytest.fixture来实现部分用例前后置。@pytest.fixture这个装饰器既可以实现所有用例前后置，也可以实现部分用例前后置
+下面请看p6课程
+@pytest.fixture(scope='',params='',autouse='',ids='',name='')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

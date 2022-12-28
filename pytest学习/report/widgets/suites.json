@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "24a2daeca10501ec3366d6152e6fe035",
+    "name" : "p3pytestyonglizhixingshunxu.web",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 7
+    }
+  } ]
+}

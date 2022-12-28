@@ -1,0 +1,102 @@
+
+
+六、pytest执行测试用例的顺序
+unittest通过ascll的大小来决定的执行顺序
+
+pytest默认从上到下
+
+改变pytest默认的用例执行顺序：使用mark标记，其中@pytest.mark.run是固定写法，括号里传order等于1代表第一个执行的用例
+    @pytest.mark.run(order=1)
+    def test_03_login(self):
+        print('测试哈哈')
+
+
+七、如何分组执行（冒烟、分模块执行、分接口和web执行）
+somke：冒烟用例，分布在各个模块里面
+    @pytest.mark.smoke#mark标记测试用例用于分组执行，其中@pytest.mark是固定写法，somke是自己起的名字可以自己随意写
+    def test_03_login(self):
+        print('测试哈哈')
+标记完后去全局配置文件pytest.ini中配置markers=（此处就不写了，去下面看示例），然后在命令行输入pytest -vs ./p3pytestyonglizhixingshunxu -m 'smoke'   然后系统会执行标记的somke的冒烟测试用例
+假如想执行冒烟测试用例还想执行标记username的测试用例那么就是pytest -vs ./p3pytestyonglizhixingshunxu -m 'smoke or username'   如果是运行3个分组那么在加个or就可以了
+pytest  -m 'smoke'#运行冒烟测试用例分组的命令行
+pytest  -m 'smoke or username'运行冒烟用例分组的命令行并且运行username分组标记的用例，因为全局配置文件pytest.ini中配置了参数-vs所以在命令行中就不用再加-vs了，如果全局配置文件没配置那么需要加-vs打印详细信息
+
+八、跳过测试用例（比如我们有时就想执行正向的测试用例，反向的测试用例不想执行）
+（1）无条件跳过测试用例
+ @pytest.mark.skip(reason='跳过测试用例不想执行')#有条件跳过测试用例。@pytest.mark.skipif是固定写法括号里面判断age>=18就跳过测试用例，reason=‘跳过测试用例的原因’
+（2）有条件跳过测试用例
+@pytest.mark.skipif(age>=18,reason='跳过测试用例')#@pytest.mark.skip无条件跳过测试用例，括号里可以写原因reason=‘跳过的原因’，运行的时候此条用例就不会被执行
+
+
+
+
+
+
+
+
+3、通过读取pytest.ini配置文件运行(pytest ini中不能有中文注释一定要删除），这个全局配置文件很重要要学好知道
+pytest ini这个文件它是pytest单元测试框架的最核心配置文件(创建的是普通file文件，而不是python file文件）
+1位置：一般放在项目的根目录，比如此项目文件pytest学习，那么它就这pytest学习这个文件下面，它的名字是不能够改的必须的写成pytest.ini
+2编码：必须是ANSI，可以使用notepad++修改编码格式（如果不用这个工具修改会报错）
+3作用：改变pytest默认的行为
+4运行的规则：不管是主函数的模式运行，命令行模式运行，都回去读取这个配置文件
+
+pytest默认行为是一下3种。也可以用pytest.ini配置文件去更改
+1模块名必须以test_开头或_test结尾
+2测试类必须以Test开头，并且不能有init方法（也就python中的魔术初始化方法__init__)
+3测试方法（也就是测试用例）必须以test_开头
+
+
+
+pytest ini配置文件   全局文件配置好了再命令行输入pytest就能运行所有的用例并且按照全局配置文件进行执行的
+[pytest]#固定的写法，注意pytest ini配置文件中不能有注释的中文，所以我在这里写明，为了自己以后能看清楚能记住
+#命令行参数，用空格分隔,我们学到的命令行参数都可以在addopts中加，多个参数用空格隔开
+#--html ./report/report.html解释：在addopts加上--html生成html报告，./report表示当前目录report文件生成一个名字为report.html报告。如果是allure报告就这样写  --alluredir=./temp
+addopts =-vs --html ./report/report.html
+#表示用例的执行位置，可自己配置，../代表是上一层目录，./代表的是当前目录
+testpaths=./p3pytest用例执行顺序
+#表示模块名是已什么样的格式开头。我们现在是已test_开头，所以就算test_*.py，当然如果我们的模块名是aaa开头也可以，那么此处就是aaa*.py   表示执行哪些测试用例文件的匹配规则
+python_files = test_*.py
+#测试用例类的匹配规则，也就是执行哪些测试类。包括我们的类名也是可以改成AAA开头的 这就是改变pytest默认行为
+python_classes = Test*
+#测试用例方法的匹配规则，也就是执行哪些方法
+python_functions =test*
+python_functions =test*
+#markers参数用于标记，便于执行部分测试用例，比如执行冒烟测试用例  然后去命令行输入命令pytest -vs ./文件名 -m 'smoke'  #其中-m是参数，要执行冒烟测试用例就写上全局配置文件中smoke，如果要执行用户管理模块那么就写'username'，mark标记的smoke是自己起的名字
+#smoke冒号后面是自己写的备注
+markers=
+    smoke:冒烟测试用例
+    username:用户管理模块
+    proeuctmanage:接口用例
+
+
+全局配置文件配置好后去命令行输入下面命令就会运行p3pytestyonglizhixingshunxu这个文件的相关符合条件的用例
+pytest -vs ./p3pytestyonglizhixingshunxu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

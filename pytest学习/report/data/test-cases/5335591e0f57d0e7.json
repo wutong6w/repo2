@@ -1,0 +1,57 @@
+{
+  "uid" : "5335591e0f57d0e7",
+  "name" : "test_02_logao",
+  "fullName" : "p3pytestyonglizhixingshunxu.web.test_lianxi.Testlogin#test_02_logao",
+  "historyId" : "0af9286fb84de77deb8a4a3e698aa777",
+  "time" : {
+    "start" : 1671438119425,
+    "stop" : 1671438119425,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "p3pytestyonglizhixingshunxu.web"
+  }, {
+    "name" : "suite",
+    "value" : "test_lianxi"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testlogin"
+  }, {
+    "name" : "host",
+    "value" : "wutong6-43"
+  }, {
+    "name" : "thread",
+    "value" : "4976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "p3pytestyonglizhixingshunxu.web.test_lianxi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "5335591e0f57d0e7.json",
+  "parameterValues" : [ ]
+}

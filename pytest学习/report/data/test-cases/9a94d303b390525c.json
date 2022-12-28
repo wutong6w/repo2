@@ -1,0 +1,57 @@
+{
+  "uid" : "9a94d303b390525c",
+  "name" : "test_02_login",
+  "fullName" : "p3pytestyonglizhixingshunxu.web.test_shangcheng.Testlogin#test_02_login",
+  "historyId" : "aaee15be36678627642f70e99cf0d7d1",
+  "time" : {
+    "start" : 1671438510020,
+    "stop" : 1671438510020,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "p3pytestyonglizhixingshunxu.web"
+  }, {
+    "name" : "suite",
+    "value" : "test_shangcheng"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testlogin"
+  }, {
+    "name" : "host",
+    "value" : "wutong6-43"
+  }, {
+    "name" : "thread",
+    "value" : "13600-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "p3pytestyonglizhixingshunxu.web.test_shangcheng"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "smoke" ]
+  },
+  "source" : "9a94d303b390525c.json",
+  "parameterValues" : [ ]
+}
